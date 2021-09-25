@@ -35,7 +35,7 @@ onValue(temperatura, (snapshot) => {
     const temp = document.getElementById('temp');
     temp.innerText = datosTemp + ' °C';
     console.log("Temperatura:",datosTemp);
-    
+
     const tempMax = document.getElementById('tempMax');
     const valTempMax = tempMax.value;
     const tempMin = document.getElementById('tempMin');
@@ -93,17 +93,17 @@ const sliderMin = document.querySelector(".input2");
 const minima = document.querySelector(".minima");
 minima.textContent = sliderMin.value;
 sliderMin.oninput = function () {
-    minima.textContent = this.value + " °C";
+    minima.textContent = this.value;
 }
 
 // Escritura de datos
-const alarm = 1;
+/*const alarm = 1;
 const aire = 2;
 set(ref(db, 'Sensores/'), {
     Alarma: alarm,
     Control: aire,
 });
-
+*/
 // Estado alarma
 //const alarma = ref(db, 'Sensores/' + '/Alarma');
 //onValue(alarma, (snapshot) => {
@@ -117,5 +117,3 @@ set(ref(db, 'Sensores/'), {
 //3 : Temperatura normal
 //4 : Temperatura baja
 // Tomar el valor de la etiqueta temperatura xddd
-
-

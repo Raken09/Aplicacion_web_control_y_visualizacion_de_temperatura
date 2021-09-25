@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang='es'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Sensor de Temperatura y Humedad</title>
+        <link rel='stylesheet' href='https://unpkg.com/bulma@0.9.1/css/bulma.min.css'>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+
+    <body>
+        <section id='app' class='hero is-link is-fullheight'>
+            <div class='hero-body'>
+                <div class='container'>
+                    <div class='columns has-text-centered'>
+                        <div class='column'>
+                            <h1 class='title' >Medidor de condiciones atmosfericas</h1>
+                            
+                        </div>
+                    </div>
+                    <div class='columns'>
+                        <div class='column has-text-centered'>
+                            <h2 class='is-size-4 has-text-warning'>Temperatura</h2>
+                            <h2 class='is-size-1' id="temp"></h2>
+                        </div>
+                        <div class='column has-text-centered'>
+                            <h2 class='is-size-4 has-text-warning'>Humedad</h2>
+                            <h2 class='is-size-1' id="hum"></h2>
+                        </div>
+                    </div>
+                    <div class='columns has-text-centered'>
+                        <div class='column'>
+                            <h1 class='is-size-4 has-text-warning'>Estado temperatura</h1>
+                            <h2 class='is-size-1' id="estado"></h2>
+                            <h2 style='font-size: 1.5rem'>Termómetro</h2>
+                            <i class='fa fa-thermometer-half' style='font-size: 4rem;' id="termometro"></i>
+                        </div>
+                    </div>
+                    <div class='columns has-text-centered'>
+                        <div class='column'>
+                            <h1 class='is-size-4 has-text-warning'>Edita los limites de temperatura</h1>
+                            <label style='font-size: 1.5rem' for="tempMax">Temperatura máxima (°C):</label>
+                            <input class="input1" type="range" id="tempMax" min="-50" max="120" value="30">
+                            <h2 style='font-size: 1.5rem' class="maxima"></h2>
+                        </div>
+                    </div>
+                    <div class='columns has-text-centered'>
+                        <div class='column'>
+                            <label style='font-size: 1.5rem' for="tempMin">Temperatura minima (°C):</label>
+                            <input class="input2" type="range" id="tempMin" min="-50" max="120" value="20">
+                            <h2 style='font-size: 1.5rem' class="minima"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script type="module" src="./app.js"></script>
+    </body>
+
+</html>

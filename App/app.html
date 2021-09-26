@@ -9,15 +9,14 @@
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
         <link rel="stylesheet" href="./estilos.css">
     </head>
-
+    
     <body>
         <section id='app' class='hero is-link is-fullheight'>
             <div class='hero-body'>
                 <div class='container'>
                     <div class='columns has-text-centered'>
                         <div class='column'>
-                            <h1 class='title' >Medidor de condiciones atmosfericas</h1>
-                            
+                            <h1 class='title'>Medición y control de condiciones admosféricas</h1>
                         </div>
                     </div>
                     <div class='columns'>
@@ -34,8 +33,11 @@
                         <div class='column'>
                             <h1 class='is-size-4 has-text-warning'>Estado temperatura</h1>
                             <h2 class='is-size-1' id="estado"></h2>
+                            <img src="" id="imEstado" alt="Imagen estado temperatura">
                             <h2 style='font-size: 1.5rem'>Termómetro</h2>
                             <i class='fa fa-thermometer-half' style='font-size: 4rem;' id="termometro"></i>
+                            <h2 class='is-size-1' id="aire"></h2>
+                            <img src="" id="imAire" alt="Imagen aire acondicionado">
                         </div>
                     </div>
                     <div class='columns has-text-centered'>
@@ -56,8 +58,6 @@
                 </div>
             </div>
         </section>
-        
         <script type="module" src="./app.js"></script>
     </body>
-
 </html>

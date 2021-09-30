@@ -51,7 +51,7 @@ setInterval(() => {
             } else if (datosTemp < valTempMin) {
                 estado.innerText = "Temperatura baja";
                 imEstado.src = "./imag/frio.png";
-                imAire.src.
+                imAire.src = "";
                 aire.innerText = "Aire acondicionado apagado";
                 termometro.classList.remove("fa-thermometer-full");
                 termometro.classList.remove("fa-thermometer-half");
@@ -60,6 +60,7 @@ setInterval(() => {
             } else {
                 estado.innerText = "Temperatura normal";
                 imEstado.src = "./imag/normal.png";
+                imAire.src = "";
                 aire.innerText = "Aire acondicionado apagado";
                 termometro.classList.remove("fa-thermometer-full");
                 termometro.classList.remove("fa-thermometer-empty");
@@ -144,4 +145,3 @@ setInterval(() => {
 //2 : Temperatura alta
 //3 : Temperatura normal
 //4 : Temperatura baja
-// Tomar el valor de la etiqueta temperatura xddd

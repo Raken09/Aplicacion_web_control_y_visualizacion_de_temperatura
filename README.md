@@ -1,4 +1,4 @@
-# App_temperatura
+# Aplicación web control y visualización de temperatura
 
 Presentado por:
 
